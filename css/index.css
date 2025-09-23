@@ -22,39 +22,53 @@ body {
     background-color: white;
     width: 834px;
     height: 1194px;
-    display: block;
-    margin: 0 auto;
-
+    margin: auto;
 }
 
 
-
-/*DIV LOGO E BOTÕES LOGIN E CARTRAR-SE*/
-.conteudo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-
-
-}
-
-/*BOTÃO SAIR*/
-.sair {
+/*LOGO NOME (CABEÇALHO)*/
+.logo_nome {
     font-family: poppins;
-    font-size: 15px;
-    padding: 10px 40px 10px 40px;
-    margin-left: 30px;
-    margin-top: 30px;
-    border: none;
-    background-color: #E8EFF8;
-    border-radius: 5px;
+    font-size: 40px;
+    color: #525EED;
     font-weight: bold;
-    color: #767474;
-    transition: transform 0.2s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    float: right;
+}
 
 
+
+/*IMAGEM LOGO (CABEÇALHO)*/
+.logo {
+    width: 36px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+/*MAIN*/
+main {
+    width: 400px;
+    margin: auto;
+}
+
+
+fieldset {
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+main p {
+    text-align: justify;
+    margin: auto;
+    font-family: poppins;
+    color: #484952;
+    margin: 60px 40px;
+}
+
+
+.botoes {
+    margin: 60px 40px;
 }
 
 
@@ -62,17 +76,17 @@ body {
 .login {
     font-family: poppins;
     font-size: 15px;
-    display: block;
     width: 200px;
     padding: 10px 10px;
-    margin: 0 auto;
     border: none;
-    background-color: #E8EFF8;
+    background-color: #525EED;
     border-radius: 5px;
     font-weight: bold;
-    color: #767474;
+    color: white;
     transition: transform 0.2s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto;
 }
 
 
@@ -80,32 +94,45 @@ body {
 .cadastrar_se {
     font-family: poppins;
     font-size: 15px;
-    display: block;
     width: 200px;
     padding: 10px 10px;
-    margin: 0 auto;
     border: none;
-    background-color: #E8EFF8;
+    background-color: #525EED;
     border-radius: 5px;
     font-weight: bold;
-    color: #767474;
+    color: white;
     transition: transform 0.2s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-
-/*IMAGEM LOGO*/
-.logo {
     display: block;
-    margin: 0 auto;
-    width: 251px;
-    margin-bottom: 100px;
+    margin: auto;
 }
 
 
 /*HOVER TODOS OS BOTÕES*/
 button:hover {
-    background: #525EED;
-    color: white;
+    background: #F3D745;
+    color: #484952;
     transform: scale(1.1);
 }
+
+
+/*RODAPÉ*/
+footer {
+    font-family: poppins;
+    color: #484952;
+}
+
+
+.contato {
+    float: right;
+    margin-right: 20px;
+}
+
+.autora {
+    margin-left: 50px;
+}
+
+/*
+#484952 cinza mais escuro
+#767474 cinza mais claro
+*/

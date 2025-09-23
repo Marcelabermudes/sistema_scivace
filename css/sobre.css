@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(/font/Poppins-Medium.ttf);
+}
+
+
+/*HTML*/
+html {
+    background-color: #F5F5F5;
+}
+
+
+/*BODY*/
+body {
+    background-color: white;
+    width: 834px;
+    height: 1194px;
+    margin: auto;
+}
+
+
+/*IMAGEM LOGO (CABEÇALHO)*/
+.logo {
+    width: 36px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+/*MENU DE NAVEGAÇÃO*/
+nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    font-family: poppins;
+    color: #484952;
+
+}
+
+nav li:hover {
+    color: #F3D745;
+    transform: scale(1.1);
+}
+
+
+/*Título da página*/
+main h1 {
+    font-family: poppins;
+    font-size: 40px;
+    color: #484952;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+main span {
+    color: #525EED;
+}
