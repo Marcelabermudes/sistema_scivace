@@ -43,26 +43,110 @@ nav {
 
 nav li {
     display: inline;
-    font-family: poppins;
-    color: #484952;
-
 }
 
-nav li:hover {
+nav li a {
+    font-family: poppins;
+    color: #484952;
+    text-decoration: none;
+}
+
+nav li a:hover {
     color: #F3D745;
     transform: scale(1.1);
 }
 
 
-/*Título da página*/
+
+/*MAIN*/
+main {
+    width: 700px;
+    margin: auto;
+}
+
+
+/*TÍTULO DA PÁGINA*/
 main h1 {
     font-family: poppins;
     font-size: 40px;
     color: #484952;
     font-weight: bold;
-    margin-left: 20px;
 }
 
 main span {
     color: #525EED;
+
 }
+
+
+/*PARAGRÁFO DO MAIN*/
+main p {
+    font-family: poppins;
+    color: #484952;
+    text-align: justify;
+}
+
+
+/*GALERIA DE FOTOS*/
+.galeria {
+    text-align: center;
+}
+
+
+.galeria img {
+    width: 230px;
+    height: 275px;
+}
+
+
+
+/*BOTÃO VOLTAR*/
+.voltar {
+    font-family: poppins;
+    font-size: 15px;
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #525EED;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    position: relative;
+    left: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+
+/*HOVER TODOS OS BOTÕES*/
+button:hover {
+    background: #F3D745;
+    color: #484952;
+    transform: scale(1.1);
+}
+
+/*RODAPÉ*/
+footer {
+    font-family: poppins;
+    color: #484952;
+}
+
+
+.contato {
+    float: right;
+    margin-right: 20px;
+}
+
+.autora {
+    margin-left: 50px;
+}
+
+/*
+#484952 cinza mais escuro
+#767474 cinza mais claro
+*/

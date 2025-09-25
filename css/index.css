@@ -50,11 +50,14 @@ body {
 main {
     width: 400px;
     margin: auto;
+    position: relative;
+    top: 300px;
+
 }
 
 
 fieldset {
-    border-radius: 8px;
+    border-radius: 5px;
     margin-bottom: 50px;
 }
 
@@ -120,16 +123,18 @@ button:hover {
 footer {
     font-family: poppins;
     color: #484952;
+    position: relative;
+    top: 680px;
 }
 
 
 .contato {
     float: right;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .autora {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 /*
