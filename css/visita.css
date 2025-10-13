@@ -81,6 +81,123 @@ main span {
 
 
 
+/*COLUNAS*/
+.colunas {
+    /*flex-grow: 1; NÃO LEMBRO PARA OQUE SERVE*/
+    width: 50%;
+    background: white;
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.coluna_1 {
+    padding-right: 5px;
+}
+
+.coluna_2 {
+    padding-left: 5px;
+}
+
+
+/*CONTEUDO*/
+.conteudo {
+    background: yellowgreen;
+    height: 1194px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    font-family: poppins;
+    color: #484952;
+    font-size: 14px;
+}
+
+
+/*TITULOS*/
+.titulo {
+    font-size: 16px;
+}
+
+
+/*INPUT/CAIXAS DE TEXTO*/
+input {
+    background: #E8F0FD;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #484952;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+
+/*RADIO/BOLINHA*/
+input[type="radio"] {
+    appearance: none;
+    /* remove o estilo padrão */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #E8F0FD;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+}
+
+/* Hover — muda a cor da bolinha ao passar o mouse */
+input[type="radio"]:hover {
+    background-color: #f3d745;
+    /* cor quando passa o mouse */
+    border-color: #f3d745;
+}
+
+/* Quando estiver selecionado */
+input[type="radio"]:checked {
+    background-color: #525EED;
+    /* cor quando marcado */
+}
+
+
+/*DROPDOW*/
+select {
+    background-color: #E8F0FD;
+    /* cor de fundo */
+    color: #484952;
+    /* cor do texto */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+
+/*QUARTEIRÃO E NÚMERO*/
+.numero {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5PX;
+}
+
+.tipo {
+    width: 50%;
+
+    background: yellow;
+    border: 1px solid black;
+}
+
+.conteudo_2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.larvicida {
+    width: 50%;
+    background: #525EED;
+}
 
 /*BOTÃO VOLTAR*/
 .voltar {
@@ -122,6 +239,12 @@ footer {
 .autora {
     margin-left: 50px;
 }
+
+/*@media screen and (max-width:600px) {
+    .conteudo {
+        flex-direction: column;
+    }*/
+
 
 /*
 #484952 cinza mais escuro

@@ -35,6 +35,95 @@
 
         <!--TITULO DA PÁGINA-->
         <h1>Registro de <span>visita</span></h1>
+
+        <!--FORMULÁRIO-->
+        <form action="">
+            <div class="conteudo">
+                <div class="colunas coluna_1">
+                    <!--BAIRRO-->
+                    <label class="titulo" for="bairro">Bairro</label> <br>
+                    <select name="bairro" id="bairro">
+                        <option value="lagoa">Lagoa</option>
+                        <option value="bairro_das_laranjeiras">Bairro das Laranjeiras</option>
+                        <option value="portal_de_jacaraipe">Portal de Jacaraípe</option>
+                        <option value="enseada_de_jacaraipe">Enseada de Jacaraípe</option>
+                    </select>
+                    <!--NUMERO-->
+                    <div>
+                        <div class="numero titulo">
+                            <label for="quarteirao">Quarteirão</label><br>
+                            <input type="number" id="quarteirao" name="quarteirao" min="1" max="1000">
+                        </div>
+                        <div class="numero titulo">
+                            <label for="numero">N° Imóvel</label><br>
+                            <input type="number" id="numero" name="numero" min="1" max="1000">
+                        </div>
+                        <div class="numero titulo">
+                            <label for="complemento">Compl.</label><br>
+                            <input type="number" id="complemento" name="complemento" min="1" max="1000">
+                        </div>
+
+                    </div>
+                    <!--RUA-->
+                    <label class="titulo" for="rua">Rua</label><br>
+                    <input type="text" id="rua" name="rua" value=""><br>
+                    <!--IMÓVEL INSPECIONADO-->
+                    <p class="titulo">Imóvel inspecionado</p>
+                    <input type="radio" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label><br>
+                    <input type="radio" id="nao" name="nao" value="nao">
+                    <label for="nao">Não</label><br>
+                    <!--IMÓVEL TRATADO-->
+                    <p class="titulo">Imóvel tratado</p>
+                    <input type="radio" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label><br>
+                    <input type="radio" id="nao" name="nao" value="nao">
+                    <label for="nao">Não</label><br>
+                </div>
+                <div class="colunas coluna_2">
+                    <div class="conteudo_2">
+                        <!--TIPO DE IMÓVEL-->
+                        <div class="tipo tipo_1">
+                            <p class="titulo">Tipo de imóvel</p>
+                            <input type="radio" id="residencia" name="residencia" value="residencia">
+                            <label for="residencia">Residência</label><br>
+                            <input type="radio" id="comercio" name="comercio" value="comercio">
+                            <label for="comercio">Comércio</label><br>
+                            <input type="radio" id="terreno_baldio" name="terreno_baldio" value="terreno_baldio">
+                            <label for="terreno_baldio">Terreno baldio</label><br>
+                            <input type="radio" id="outros" name="outros" value="outros">
+                            <label for="outros">Outros</label><br>
+                            <input type="radio" id="pe" name="pe" value="pe">
+                            <label for="pe">PE</label><br>
+                        </div>
+                        <!--TIPO DE VISITA-->
+                        <div class="tipo tipo_2">
+                            <p class="titulo">Tipo de visita</p>
+                            <input type="radio" id="fechada" name="fechada" value="fechada">
+                            <label for="fechada">Fechada</label><br>
+                            <input type="radio" id="recusada" name="recusada" value="recusada">
+                            <label for="recusada">Recusada</label><br>
+                            <input type="radio" id="recuperada" name="recuperada" value="recuperada">
+                            <label for="recuperada">Recuperada</label><br>
+                        </div>
+                    </div>
+                    <!--LARVICIDA-->
+                    <div class="conteudo_2">
+                        <div class="larvicida">
+                            <!--BAIRRO-->
+                            <label class="titulo larvicida" for="bairro">Tipo de larvicida</label> <br>
+                            <select name="tipo_de_larvicida" id="tipo_de_larvicida">
+                                <option value="l3">L3</option>
+                        </div>
+                        <div class="larvicida">
+                            <label for="quarteirao">Quarteirão</label><br>
+                            <input type="number" id="quarteirao" name="quarteirao" min="1" max="1000">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
     </main>
 
     <!--RODAPÉ-->
