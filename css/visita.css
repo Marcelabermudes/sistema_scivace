@@ -85,10 +85,8 @@ main span {
 .colunas {
     /*flex-grow: 1; NÃO LEMBRO PARA OQUE SERVE*/
     width: 50%;
-    height: 1000px;
-    background: white;
+    height: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .coluna_1 {
@@ -102,8 +100,7 @@ main span {
 
 /*CONTEUDO*/
 .conteudo {
-    background: yellowgreen;
-    height: 1050px;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -117,10 +114,11 @@ main span {
 .secao {
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     height: 80px;
     border: 1px solid gainsboro;
     border-radius: 8px;
+    background: white;
 }
 
 
@@ -326,8 +324,14 @@ select {
     height: 160px;
 }
 
+.botoes {
+    display: flex;
+    justify-content: end;
+}
+
 /*BOTÃO VOLTAR*/
-.voltar {
+.voltar,
+.enviar {
     font-family: poppins;
     font-size: 15px;
     width: 150px;
@@ -339,13 +343,16 @@ select {
     color: white;
     transition: transform 0.2s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
 
 }
 
 
 /*HOVER TODOS OS BOTÕES*/
-button:hover {
+button:hover,
+.enviar:hover {
     background: #F3D745;
     color: #484952;
     transform: scale(1.1);

@@ -96,6 +96,7 @@ main p {
 .galeria img {
     width: 230px;
     height: 275px;
+    border-radius: 5px;
 }
 
 
