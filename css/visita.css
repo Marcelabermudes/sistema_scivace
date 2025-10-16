@@ -85,25 +85,25 @@ main span {
 .colunas {
     /*flex-grow: 1; NÃO LEMBRO PARA OQUE SERVE*/
     width: 50%;
+    height: 1000px;
     background: white;
-    border: 1px solid black;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .coluna_1 {
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .coluna_2 {
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 
 /*CONTEUDO*/
 .conteudo {
     background: yellowgreen;
-    height: 1194px;
+    height: 1050px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -112,6 +112,15 @@ main span {
     font-family: poppins;
     color: #484952;
     font-size: 14px;
+}
+
+.secao {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    height: 80px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
 }
 
 
@@ -129,9 +138,13 @@ input {
     padding: 10px;
     color: #484952;
     font-family: poppins;
-    font-size: 14px;
+    font-size: 13px;
 }
 
+/*INPUT NUMERO - TAMANHO*/
+input[type="number"] {
+    width: 100px;
+}
 
 /*RADIO/BOLINHA*/
 input[type="radio"] {
@@ -171,22 +184,94 @@ select {
     border: none;
     cursor: pointer;
     font-family: poppins;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
-/*QUARTEIRÃO E NÚMERO*/
+.drop_largura {
+    width: 100%;
+}
+
+.drop_l3 {
+    width: 100px;
+}
+
+.espacamento_radio label {
+    margin-right: 25%;
+    font-size: 13px;
+}
+
+
+.colunas_radio {
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+}
+
+.espacamento_coluna_radio {
+    width: 50%;
+}
+
+.numeros {
+    display: flex;
+    width: 100%;
+}
+
+.numero {
+    width: 33%;
+    text-align: center;
+}
+
+/*QUARTEIRÃO E NÚMERO
 .numero {
     display: inline-block;
     text-align: center;
-    margin-right: 5PX;
+    margin-right: 5PX;}*/
+
+
+.imoveis {
+    display: flex;
+    width: 100%;
+}
+
+.imovel_inspecionado,
+.imovel_tratado {
+
+    width: 50%;
+
 }
 
 .tipo {
     width: 50%;
+    height: 160px;
+}
 
-    background: yellow;
-    border: 1px solid black;
+.texto_pequeno {
+    width: 100%;
+}
+
+.morador,
+.rua {
+    width: 100%;
+}
+
+.observacao {
+    width: 100%;
+    background: #E8F0FD;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.texto_grande {
+    width: 100%;
+}
+
+.texto_grande textarea {
+    color: #484952;
+    padding: 10px;
+
+    font-family: poppins;
+    font-size: 13px;
 }
 
 .conteudo_2 {
@@ -194,9 +279,51 @@ select {
     align-items: flex-start;
 }
 
-.larvicida {
+.div3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.div4,
+.div5 {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
     width: 50%;
-    background: #525EED;
+}
+
+
+.div3 input,
+.div3 select {
+    width: 100px;
+}
+
+.tipo_deposito {
+    display: flex;
+    width: 100%;
+    /*display: flex;
+    flex-direction: row;
+    width: 100%;*/
+}
+
+.codigo {
+    text-align: center;
+    margin-right: 5px;
+    /*width: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    margin-right: 4px;
+    text-align: center;*/
+}
+
+.codigo input {
+    width: 75px;
+}
+
+.altura_secao {
+    height: 160px;
 }
 
 /*BOTÃO VOLTAR*/
