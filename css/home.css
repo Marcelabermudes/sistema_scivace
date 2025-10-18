@@ -142,6 +142,9 @@ main span {
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+}
 
 /*BOTÃO DENTRO DA CAIXA BRANCA*/
 .botao_entrar {
