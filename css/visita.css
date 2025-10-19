@@ -358,20 +358,21 @@ button:hover,
     transform: scale(1.1);
 }
 
-/*RODAPÉ*/
+/* RODAPÉ */
 footer {
     font-family: poppins;
     color: #484952;
+    padding: 14px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
 }
 
-
-.contato {
-    float: right;
-    margin-right: 20px;
-}
-
-.autora {
-    margin-left: 50px;
+footer .autora {
+    margin: auto;
 }
 
 /*@media screen and (max-width:600px) {

@@ -1,154 +1,337 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* FONT */
 @font-face {
     font-family: poppins;
     src: url(/font/Poppins-Medium.ttf);
 }
 
-
-/*HTML*/
+/* BASE & LAYOUT REFERÊNCIA (TABLET: 800 x 1280) */
+/*HTML E BODY*/
 html {
-    background-color: #F5F5F5;
+    background: white;
 }
 
-
-/*BODY*/
 body {
     background-color: white;
-    width: 834px;
-    height: 1194px;
-    margin: auto;
+    width: 800px;
+    height: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-stZart;
+    align-items: stretch;
+    font-family: poppins, sans-serif;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    /* evita scroll horizontal */
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 700px;
+    margin: 18px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 
-/*IMAGEM LOGO (CABEÇALHO)*/
 .logo {
     width: 36px;
-    margin-top: 10px;
+    height: auto;
     margin-left: 20px;
 }
 
-
-/*MENU DE NAVEGAÇÃO*/
-nav {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-
-}
-
-nav li {
-    display: inline;
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 nav li a {
-    font-family: poppins;
     color: #484952;
     text-decoration: none;
+    transition: color 0.18s, transform 0.18s;
 }
 
 nav li a:hover {
     color: #F3D745;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-
-
-/*MAIN*/
+/* MAIN (conteúdo central) */
 main {
-    width: 700px;
-    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 18px auto;
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    overflow-wrap: break-word;
 }
 
-
-/*TÍTULO DA PÁGINA*/
+/* TÍTULO */
 main h1 {
-    font-family: poppins;
     font-size: 40px;
     color: #484952;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 18px;
 }
 
 main span {
     color: #525EED;
-
 }
 
-
-/*PARAGRÁFO DO MAIN*/
+/* PARÁGRAFOS */
 main p {
-    font-family: poppins;
     color: #484952;
     text-align: justify;
+    line-height: 1.55;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
-
-/*GALERIA DE FOTOS*/
-.galeria {
-    text-align: center;
-}
-
-
-.galeria img {
-    width: 230px;
-    height: 275px;
+/*GALERIA*/
+.galeria_geral {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite quebrar linha automaticamente */
+    justify-content: center;
+    gap: 12px;
+    /* espaçamento entre imagens */
+    width: 100%;
+    border: 1px solid gainsboro;
+    padding: 2.5vh 0.5vw;
     border-radius: 5px;
 }
 
+.galeria_geral img {
+    flex: 1 1 calc(33.333% - 12px);
+    /* 3 imagens por linha, descontando o gap */
+    max-width: 200px;
+    /* limite máximo da imagem */
+    height: auto;
+    border-radius: 6px;
+}
 
 
-/*BOTÃO VOLTAR*/
+
+
+
+/* BOTÃO VOLTAR - centralizado */
 .voltar {
-    font-family: poppins;
     font-size: 15px;
     width: 150px;
-    padding: 10px 10px;
+    padding: 10px;
     border: none;
     background-color: #525EED;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 6px;
+    font-weight: 700;
     color: white;
-    transition: transform 0.2s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.18s, background 0.18s, color 0.18s;
     display: block;
-    position: relative;
-    left: 550px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
+    margin: 26px 0 26px auto;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
 }
 
-
-/*HOVER TODOS OS BOTÕES*/
-button:hover {
+.voltar:hover {
     background: #F3D745;
     color: #484952;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
-/*RODAPÉ*/
+/* RODAPÉ */
 footer {
-    font-family: poppins;
     color: #484952;
+    padding: 14px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
 }
 
-
-.contato {
-    float: right;
-    margin-right: 20px;
+footer .autora {
+    margin: auto;
 }
 
-.autora {
-    margin-left: 50px;
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* CELULAR: telas pequenas */
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        background-color: #525EED;
+        text-align: center;
+    }
+
+    /* Zera qualquer espaçamento nativo */
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        display: block;
+        /* ocupa toda a largura do li */
+        width: 100%;
+        text-align: center;
+        color: #484952;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: background-color 0.2s;
+    }
+
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin: 18px auto;
+        padding: 0 12px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    .voltar {
+        width: 140px;
+        font-size: 15px;
+        margin: 26px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
 }
 
-/*
-#484952 cinza mais escuro
-#767474 cinza mais claro
-*/
+/* TABLET INTERMEDIÁRIO: 601px a 1023px */
+@media (min-width: 601px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        max-width: 700px;
+        margin: 18px auto;
+        padding: 0 16px 20px;
+    }
+
+    .galeria_geral {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .galeria img {
+        width: 100%;
+        max-width: 230px;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        max-width: 700px;
+        margin: 18px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+}
+
+/* DESKTOP: telas maiores que o tablet */
+@media (min-width: 1024px) {
+    body {
+        width: 1000px;
+        height: auto;
+    }
+
+    header {
+        max-width: 700px;
+        margin: 18px auto;
+    }
+
+    main {
+        max-width: 700px;
+        margin: 18px auto;
+    }
+
+    footer {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+    .galeria img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+}
