@@ -51,21 +51,17 @@ footer {
 }
 
 /*IMAGEM LOGO (CABEÇALHO)*/
-.logo {
+/*.logo {
     width: 36px;
     margin-left: 20px;
     margin-top: 10px;
-}
+}*/
 
-fieldset {
-    width: 300px;
-    height: 300px;
-    border: 1px solid gainsboro;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 .centro {
@@ -74,6 +70,30 @@ fieldset {
     align-items: center;
     flex: 1;
 }
+
+fieldset {
+    width: 300px;
+    height: 300px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+fieldset p {
+    font-family: poppins;
+    font-size: 14px;
+    color: #484952;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #525EED;
+}
+
 
 .inferior_direito {
     display: flex;
@@ -91,9 +111,8 @@ label {
 
 input {
     width: 200px;
-    background: #E8F0FD;
     border: none;
-    border-radius: 5px;
+    border-bottom: 1px solid gainsboro;
     padding: 10px;
     color: #484952;
     font-family: poppins;
