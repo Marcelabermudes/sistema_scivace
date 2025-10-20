@@ -4,228 +4,237 @@
     box-sizing: border-box;
 }
 
-
 @font-face {
     font-family: poppins;
     src: url(/font/Poppins-Medium.ttf);
 }
 
-
 /*HTML*/
 html {
     background-color: #F5F5F5;
+    font-size: 16px;
+    /* base para rem */
 }
-
 
 /*BODY*/
 body {
     background-color: white;
-    width: 834px;
-    height: 1194px;
-    margin: auto;
+    width: 800px;
+    height: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: poppins;
 }
 
+/*HEADER*/
+header {
+    background-color: #f3d745;
+    width: 90vw;
+    max-width: 44rem;
+    /* 700px */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+}
 
 /*IMAGEM LOGO (CABEÇALHO)*/
 .logo {
-    width: 36px;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 2.25rem;
+    /* 36px */
+    margin-top: 0.625rem;
+    margin-left: 1.25rem;
 }
-
 
 /*MENU DE NAVEGAÇÃO*/
-nav {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-nav li {
-    display: inline;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
 }
 
 nav li a {
-    font-family: poppins;
     color: #484952;
     text-decoration: none;
+    transition: color 0.18s, transform 0.18s;
 }
 
 nav li a:hover {
     color: #F3D745;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-
-
 
 /*MAIN*/
 main {
-    width: 700px;
+    width: 87.5vw;
+    /* ~700px */
+    max-width: 44rem;
     margin: auto;
-    /*Talvez nessa página a largura seja outra*/
+    padding: 1.25rem;
 }
-
 
 /*TÍTULO DA PÁGINA*/
 main h1 {
-    font-family: poppins;
-    font-size: 40px;
+    font-size: 2.5rem;
+    /* 40px */
     color: #484952;
     font-weight: bold;
 }
 
 main span {
     color: #525EED;
-
 }
-
-
 
 /*COLUNAS*/
 .colunas {
-    /*flex-grow: 1; NÃO LEMBRO PARA OQUE SERVE*/
     width: 50%;
-    height: 100%;
-    padding-top: 30px;
+    height: auto;
+    padding-top: 1.875rem;
 }
 
 .coluna_1 {
-    padding-right: 15px;
+    padding-right: 0.9375rem;
 }
 
 .coluna_2 {
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
-
 
 /*CONTEUDO*/
 .conteudo {
-    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    font-family: poppins;
+    font-size: 0.875rem;
+    /* 14px */
     color: #484952;
-    font-size: 14px;
 }
 
 .secao {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 37px;
-    height: 80px;
+    padding: 0 0.625rem;
+    margin-bottom: 1.4rem;
+    height: 6.8rem;
+    min-height: 5rem;
+    /* 80px */
     border: 1px solid gainsboro;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 /*TITULOS*/
 .titulo {
-    font-size: 16px;
+    font-size: 0.8rem;
+    /* 16px */
+    margin-bottom: 5px;
 }
-
 
 /*INPUT/CAIXAS DE TEXTO*/
 input {
     background: #E8F0FD;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+    /* 13px */
     color: #484952;
-    font-family: poppins;
-    font-size: 13px;
 }
 
 /*INPUT NUMERO - TAMANHO*/
 input[type="number"] {
-    width: 100px;
+    width: 6rem;
+    /* 100px */
 }
 
 /*RADIO/BOLINHA*/
 input[type="radio"] {
     appearance: none;
-    /* remove o estilo padrão */
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    /* 15px */
+    height: 0.9375rem;
     border-radius: 50%;
     background-color: #E8F0FD;
     cursor: pointer;
     position: relative;
-    top: 6px;
+    top: 0.375rem;
 }
 
-/* Hover — muda a cor da bolinha ao passar o mouse */
 input[type="radio"]:hover {
     background-color: #f3d745;
-    /* cor quando passa o mouse */
     border-color: #f3d745;
 }
 
-/* Quando estiver selecionado */
 input[type="radio"]:checked {
     background-color: #525EED;
-    /* cor quando marcado */
 }
 
-
-/*DROPDOW*/
+/*DROPDOWN*/
 select {
     background-color: #E8F0FD;
-    /* cor de fundo */
+    font-family: poppins;
     color: #484952;
-    /* cor do texto */
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
     border: none;
     cursor: pointer;
-    font-family: poppins;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
-
+/*LARGURA SELECT*/
 .drop_largura {
     width: 100%;
 }
 
 .drop_l3 {
-    width: 100px;
+    width: 6.25rem;
 }
 
+/*RADIO E COLUNAS*/
 .espacamento_radio label {
     margin-right: 25%;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
-
 
 .colunas_radio {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .espacamento_coluna_radio {
     width: 50%;
+    font-size: 90%;
 }
 
+
 .numeros {
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .numero {
     width: 33%;
     text-align: center;
+    margin: 1%;
+    box-sizing: border-box;
 }
 
-/*QUARTEIRÃO E NÚMERO
-.numero {
-    display: inline-block;
-    text-align: center;
-    margin-right: 5PX;}*/
-
+.numero input {
+    width: 100%;
+}
 
 .imoveis {
     display: flex;
@@ -234,42 +243,35 @@ select {
 
 .imovel_inspecionado,
 .imovel_tratado {
-
     width: 50%;
-
 }
 
 .tipo {
     width: 50%;
-    height: 160px;
+    height: 10rem;
+    /* 160px */
 }
 
-.texto_pequeno {
-    width: 100%;
-}
-
+.texto_pequeno,
 .morador,
-.rua {
-    width: 100%;
-}
-
-.observacao {
-    width: 100%;
-    background: #E8F0FD;
-    border: 0px;
-    border-radius: 5px;
-}
-
+.rua,
+.observacao,
 .texto_grande {
     width: 100%;
 }
 
-.texto_grande textarea {
-    color: #484952;
-    padding: 10px;
+.observacao {
+    height: 70%;
+}
 
-    font-family: poppins;
-    font-size: 13px;
+.observacao,
+.texto_grande textarea {
+    background: #E8F0FD;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+    color: #484952;
 }
 
 .conteudo_2 {
@@ -287,70 +289,64 @@ select {
 .div5 {
     display: flex;
     flex-direction: column;
-    align-items: top;
+    align-items: flex-start;
     width: 50%;
 }
 
-
 .div3 input,
 .div3 select {
-    width: 100px;
+    width: 6.25rem;
 }
 
 .tipo_deposito {
-    display: flex;
     width: 100%;
-    /*display: flex;
+    display: flex;
+    justify-items: center;
     flex-direction: row;
-    width: 100%;*/
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .codigo {
+    width: 20%;
+
     text-align: center;
-    margin-right: 5px;
-    /*width: 13%;
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    margin-right: 4px;
-    text-align: center;*/
+    margin-right: 0.3125rem;
+    margin-left: 0.3125rem;
+
 }
 
 .codigo input {
-    width: 75px;
+    width: 100%;
 }
 
 .altura_secao {
-    height: 160px;
+    height: 12rem;
 }
 
 .botoes {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-/*BOTÃO VOLTAR*/
+/*BOTÕES*/
 .voltar,
 .enviar {
-    font-family: poppins;
-    font-size: 15px;
-    width: 150px;
-    padding: 10px 10px;
+    font-size: 0.9375rem;
+    /* 15px */
+    width: 9.375rem;
+    /* 150px */
+    padding: 0.625rem;
     border: none;
-    background-color: #525EED;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     font-weight: bold;
     color: white;
+    background-color: #525EED;
     transition: transform 0.2s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+    margin: 1.25rem 0 1.25rem 3.125rem;
 }
 
-
-/*HOVER TODOS OS BOTÕES*/
 button:hover,
 .enviar:hover {
     background: #F3D745;
@@ -358,16 +354,17 @@ button:hover,
     transform: scale(1.1);
 }
 
-/* RODAPÉ */
+/*FOOTER*/
 footer {
-    font-family: poppins;
+    background-color: #f3d745;
     color: #484952;
-    padding: 14px 20px;
-    border-top: 1px solid #eee;
+    width: 90vw;
+    max-width: 44rem;
+    /* 700px */
+    margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    padding: 1.25rem 0;
     font-size: 14px;
 }
 
@@ -375,13 +372,224 @@ footer .autora {
     margin: auto;
 }
 
-/*@media screen and (max-width:600px) {
-    .conteudo {
+
+
+/*RESPONSIVIDADE CELULAR (até 600px)*/
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
         flex-direction: column;
-    }*/
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        background-color: #525EED;
+        text-align: center;
+    }
+
+    /* Zera qualquer espaçamento nativo */
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        display: block;
+        /* ocupa toda a largura do li */
+        width: 100%;
+        text-align: center;
+        color: #484952;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: background-color 0.2s;
+    }
+
+    .conteudo {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colunas {
+        background-color: aqua;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .coluna_1 {
+        background-color: #f3d745;
+    }
 
 
-/*
-#484952 cinza mais escuro
-#767474 cinza mais claro
-*/
+
+    main {
+        background-color: lightsalmon;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        padding: 0 12px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    .tipo_deposito {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .codigo {
+        width: 20%;
+
+        text-align: center;
+        margin-right: 0.3125rem;
+        margin-left: 0.3125rem;
+
+    }
+
+    .codigo input {
+        width: 100%;
+    }
+
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        background: #E8F0FD;
+        gap: 20px;
+    }
+
+    .voltar,
+    .enviar {
+        margin: 0;
+    }
+
+    footer {
+        width: 100%;
+        margin-left: 5;
+        margin-right: 5px;
+        flex-direction: row;
+        text-align: center;
+        gap: 6px;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+/* TABLET INTERMEDIÁRIO: 601px a 1023px */
+@media (min-width: 601px) and (max-width: 1023px) {
+
+    body {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        background-color: darkseagreen;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        padding: 0 16px 20px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    /*RADIO E COLUNAS*/
+
+}
+
+
+/*PARA DESKTOP ACIMA DE 1024PX*/
+@media (min-width: 1024px) {
+
+    body {
+        width: 1000px;
+        height: auto;
+    }
+
+    header {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    main {
+        background-color: khaki;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    footer {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+    nav ul {
+        gap: 18px;
+    }
+}

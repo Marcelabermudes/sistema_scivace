@@ -12,7 +12,10 @@
 
     <!--TOPO/CABEÇALHO-->
     <header>
-
+        <!--LOGO DO MENU-->
+        <figure>
+            <img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">
+        </figure>
         <!--MENU DE NAVEGAÇÃO-->
         <nav>
             <ul>
@@ -23,11 +26,6 @@
                 <li><a href="index.html">Sair</a> &nbsp; &nbsp;</li>
             </ul>
         </nav>
-
-        <!--LOGO DO MENU-->
-        <figure>
-            <img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">
-        </figure>
     </header>
 
     <!--MAIN-->
@@ -42,7 +40,7 @@
                 <div class="colunas coluna_1">
                     <!--BAIRRO-->
                     <div class="secao">
-                        <label class="titulo" for="bairro">Bairro</label> <br>
+                        <label class="titulo" for="bairro">Bairro</label>
                         <select class="drop_largura" name="bairro" id="bairro">
                             <option value="lagoa">Lagoa</option>
                             <option value="bairro_das_laranjeiras">Bairro das Laranjeiras</option>
@@ -68,27 +66,31 @@
                     </div>
                     <!--RUA-->
                     <div class="secao texto_pequeno">
-                        <label class="titulo" for="rua">Rua</label><br>
+                        <label class="titulo" for="rua">Rua</label>
                         <input class="rua" type="text" id="rua" name="rua" value=""><br>
                     </div>
 
+                    <!--TIPO DE IMÓVEL 2-->
                     <!--TIPO DE IMÓVEL 2-->
                     <div class="secao">
                         <p class="titulo">Tipo de imóvel</p>
                         <div class="colunas_radio">
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="residencia" name="tipo_de_imovel_2" value="residencia">
-                                <label for="residencia">Residência</label> <br>
-
+                                <label for="residencia">Residência</label>
+                            </div>
+                            <div class="espacamento_coluna_radio">
                                 <input type="radio" id="outros" name="tipo_de_imovel_2" value="outros"> <label
-                                    for="outros">Outros</label> <br>
+                                    for="outros">Outros</label>
                             </div>
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="comercio" name="tipo_de_imovel_2" value="comercio"> <label
-                                    for="comercio">Comercio</label><br>
+                                    for="comercio">Comercio</label>
+                            </div>
+                            <div class="espacamento_coluna_radio">
 
                                 <input type="radio" id="pe" name="tipo_de_imovel_2" value="pe"> <label
-                                    for="pe">PE</label> <br>
+                                    for="pe">PE</label>
                             </div>
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="terreno_baldio" name="tipo_de_imovel_2" value="terreno_baldio">
@@ -104,11 +106,11 @@
                         <div class="colunas_radio">
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="residencia" name="tipo_de_imovel_2" value="residencia">
-                                <label for="residencia">Recusada</label> <br>
+                                <label for="residencia">Recusada</label>
                             </div>
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="outros" name="tipo_de_imovel_2" value="outros"> <label
-                                    for="outros">Fechada</label> <br>
+                                    for="outros">Fechada</label>
                             </div>
                             <div class="espacamento_coluna_radio">
                                 <input type="radio" id="comercio" name="tipo_de_imovel_2" value="comercio"> <label
@@ -116,37 +118,10 @@
                             </div>
                         </div>
                     </div>
-                    <!--NÃO USAR POR ENQUANTO
-                    <div class="conteudo_2 secao">
-                        TIPO DE IMÓVEL
-                        <div class="tipo tipo_1">
-                            <p class="titulo">Tipo de imóvel</p>
-                            <input type="radio" id="residencia" name="tipo_de_imovel" value="residencia">
-                            <label for="residencia">Residência</label><br>
-                            <input type="radio" id="comercio" name="tipo_de_imovel" value="comercio">
-                            <label for="comercio">Comércio</label><br>
-                            <input type="radio" id="terreno_baldio" name="tipo_de_imovel" value="terreno_baldio">
-                            <label for="terreno_baldio">Terreno baldio</label><br>
-                            <input type="radio" id="outros" name="tipo_de_imovel" value="outros">
-                            <label for="outros">Outros</label><br>
-                            <input type="radio" id="pe" name="tipo_de_imovel" value="pe">
-                            <label for="pe">PE</label><br>
-                        </div>
-                        TIPO DE VISITA
-                        <div class="tipo tipo_2">
-                            <p class="titulo">Tipo de visita</p>
-                            <input type="radio" id="fechada" name="tipo_de_visita" value="fechada">
-                            <label for="fechada">Fechada</label><br>
-                            <input type="radio" id="recusada" name="tipo_de_visita" value="recusada">
-                            <label for="recusada">Recusada</label><br>
-                            <input type="radio" id="recuperada" name="tipo_de_visita" value="recuperada">
-                            <label for="recuperada">Recuperada</label><br>
-                        </div>
-                    </div> -->
                     <!--NOME DO MORADOR-->
                     <div class="secao texto_pequeno">
                         <label class="titulo" for="nome_do_morador">Nome do morador
-                        </label><br>
+                        </label>
                         <input class="morador" type="text" id="nome_do_morador" name="nome_do_morador" value=""><br>
                     </div>
                     <!--OBSERVAÇÃO-->
@@ -157,30 +132,7 @@
 
                 </div>
                 <div class="colunas coluna_2">
-                    <!--TALVEZ APAGAR
-                    <div class="conteudo_2">
-                        IMOVEL TRATADO E INSPECIONADO
-                        <div class="imoveis secao">
-                            IMÓVEL INSPECIONADO
-                            <div class="imovel_inspecionado">
-                                <p class="titulo">Imóvel <br> inspecionado</p>
-                                <input type="radio" id="sim" name="imovel_inspecionado" value="sim">
-                                <label for="sim">Sim</label><br>
-                                <input type="radio" id="nao" name="imovel_inspecionado" value="nao">
-                                <label for="nao">Não</label><br>
-                            </div>
 
-                            SIMÓVEL TRATADO
-                            <div class="imovel_tratado">
-                                <p class="titulo">Imóvel <br> tratado</p>
-                                <input type="radio" id="sim" name="imovel_tratado" value="sim">
-                                <label for="sim">Sim</label><br>
-                                <input type="radio" id="nao" name="imovel_tratado" value="nao">
-                                <label for="nao">Não</label><br>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                     <!--IMÓVEL INSPECIONADO 2-->
                     <div class="secao ">
                         <p class="titulo">Imóvel inspecionado</p>
@@ -203,23 +155,9 @@
                         </div>
                     </div>
 
-                    <!-- TALVEZ APAGAR
-                    QUANTIDADE DEPOSITOS E FOCOS
-                    <div class="div3 secao">
-                        <div class="div5"><label for="quant_deposito_eliminado">Quantidade de depósitos
-                                eliminados</label>
-                            <input type="number" id="quant_deposito_eliminado" name="quant_deposito_eliminado" min="1"
-                                max="1000">
-                        </div>
-                        <div class="div5"><label for="total_focos">Total de focos encontrados</label>
-                            <input type="number" id="total_focos" name="total_focos" min="1" max="1000">
-                        </div>
-                    </div>-->
-
-                    <!--QUANTIDADE DEPOSITO E FOCOS 2-->
                     <!--DEPOSITOS 2-->
                     <div class="secao">
-                        <label class="titulo" for="quant_deposito_eliminado">Quantidade de depósitos
+                        <label class="titulo" for="quant_deposito_eliminado">Qtd. de depósitos
                             eliminados</label>
                         <input type="number" id="quant_deposito_eliminado" name="quant_deposito_eliminado" min="1"
                             max="1000">
@@ -227,13 +165,13 @@
 
                     <!--TOTAL FOCOS-->
                     <div class="secao">
-                        <label class="titulo" for="focos_encontrados">Quantidade de focos encontrados</label><br>
+                        <label class="titulo" for="focos_encontrados">Qtd. de focos encontrados</label>
                         <input type="number" id="focos_encontrados" name="focos_encontrados" min="1" max="1000">
                     </div>
 
                     <!--LIPO DE LARVICIDA 2-->
                     <div class="secao">
-                        <label class="titulo" for="tipo_larvicida">Tipo de larvicida</label><br>
+                        <label class="titulo" for="tipo_larvicida">Tipo de larvicida</label>
                         <select class="drop_l3" name="tipo_larvicida" id="tipo_larvicida">
                             <option value="l3">L3</option>
                         </select>
@@ -242,61 +180,52 @@
 
                     <!--QUANTIDADE DE GRAMAS 2-->
                     <div class="secao">
-                        <label class="titulo" for="quantidade_gramas">Quantidade de gramas</label> <br>
+                        <label class="titulo" for="quantidade_gramas">Qtt. de gramas</label>
                         <input type="number" id="quantidade_gramas" name="quantidade_gramas" min="1" max="1000">
                     </div>
 
-                    <!--LARVICIDA
-                    <div class="div3 secao">
-                        <div class="div4">
-                            <label for="larvicida">Tipo de larvicida</label>
-                            <select name="larvicida" id="larvicida">
-                                <option value="l3">L3</option>
-                            </select>
-                        </div>
-                        <div class="depositos"></div>
-                        <div class="div5"><label for="gramas">Quantidade de gramas</label>
-                            <input type="number" id="gramas" name="gramas" min="1" max="10000">
-                        </div>
-                    </div>-->
                     <div class="secao altura_secao">
-                        <p class="titulo">Quantidade de depósito inspecionado</p>
+                        <p class="titulo">Qtd. de depósito inspecionado</p>
                         <div class="tipo_deposito">
                             <div class="codigo">
                                 <label for="tipo_deposito">A1</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
 
                             <div class="codigo">
                                 <label for="tipo_deposito">A2</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
 
                             <div class="codigo">
                                 <label for="tipo_deposito">B</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
 
                             <div class="codigo">
                                 <label for="tipo_deposito">C</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
-                        </div>
-                        <div class="tipo_deposito">
-
                             <div class="codigo">
                                 <label for="tipo_deposito">D1</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
 
                             <div class="codigo">
                                 <label for="tipo_deposito">D2</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
 
                             <div class="codigo">
                                 <label for="tipo_deposito">E</label><br>
-                                <input type="number" id="tipo_deposito" name="tipo_deposito" min="1" max="1000">
+                                <input class="A1" type="number" id="tipo_deposito" name="tipo_deposito" min="1"
+                                    max="1000">
                             </div>
                         </div>
                     </div>
