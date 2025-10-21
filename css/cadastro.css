@@ -54,6 +54,8 @@ main {
 }
 
 
+
+
 footer {
     height: 30px;
 }
@@ -72,8 +74,8 @@ footer {
     width: 12vh;
     min-width: 70px;
     max-width: 100px;
-    margin-bottom: 10px;
 }
+
 
 fieldset {
     width: 60vh;
@@ -97,6 +99,29 @@ fieldset p {
     text-align: center;
 }
 
+
+fieldset h1 {
+    font-family: poppins;
+    font-size: 3rem;
+    color: #525EED;
+    text-align: center;
+}
+
+
+fieldset p {
+    font-family: poppins;
+    font-size: 2.1vh;
+    color: #484952;
+    margin-bottom: 7vh;
+    text-align: justify;
+}
+
+
+input::placeholder {
+    color: #c2c3cc;
+    font-size: 0.85rem;
+}
+
 label {
     font-family: poppins;
     font-size: 1.8vh;
@@ -116,7 +141,7 @@ input {
 }
 
 input:focus {
-    outline-color: #d8dbfb;
+    outline-color: #525EED;
 }
 
 /*BOTÃO SALVAR*/
@@ -144,6 +169,19 @@ button:hover {
 
 a {
     text-decoration: none;
+}
+
+
+.voltar {
+    font-family: poppins;
+    font-size: 1rem;
+    color: #525EED;
+    text-decoration: underline;
+    margin-top: 2vh;
+}
+
+.voltar:hover {
+    color: #F3D745;
 }
 
 
@@ -177,6 +215,7 @@ footer {
     fieldset {
         width: 90%;
     }
+
 
     footer {
         flex-direction: column;

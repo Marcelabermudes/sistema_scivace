@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(/font/Poppins-Medium.ttf);
+}
+
+
+/*HTML*/
+html {
+    background-color: #F5F5F5;
+}
+
+
+/*BODY*/
+body {
+    background-color: white;
+    width: 834px;
+    height: 1194px;
+    margin: auto;
+}
+
+
+/*LOGO NOME (CABEÇALHO)*/
+.logo_nome {
+    font-family: poppins;
+    font-size: 40px;
+    color: #525EED;
+    font-weight: bold;
+    margin-right: 20px;
+    float: right;
+}
+
+
+
+/*IMAGEM LOGO (CABEÇALHO)*/
+.logo {
+    width: 36px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+/*MAIN*/
+main {
+    width: 400px;
+    margin: auto;
+    position: relative;
+    top: 300px;
+
+}
+
+
+fieldset {
+    border-radius: 5px;
+    margin-bottom: 50px;
+    border: 1px solid gainsboro;
+}
+
+main p {
+    text-align: justify;
+    margin: auto;
+    font-family: poppins;
+    color: #484952;
+    margin: 60px 40px;
+}
+
+
+.botoes {
+    margin: 60px 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*BOTÃO LOGIN*/
+.login {
+    font-family: poppins;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #525EED;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto;
+}
+
+
+
+/*BOTÃO CADASTRAR-SE*/
+.cadastrar_se {
+    font-family: poppins;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #525EED;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto;
+}
+
+
+/*HOVER TODOS OS BOTÕES*/
+button:hover {
+    background: #F3D745;
+    color: #484952;
+    transform: scale(1.1);
+}
+
+
+
+/*RODAPÉ*/
+footer {
+    font-family: poppins;
+    color: #484952;
+    position: relative;
+    top: 680px;
+}
+
+
+.contato {
+    float: right;
+    margin-right: 30px;
+}
+
+.autora {
+    margin-left: 30px;
+}
+
+/*
+#484952 cinza mais escuro
+#767474 cinza mais claro
+*/

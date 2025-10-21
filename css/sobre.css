@@ -14,7 +14,7 @@
 /* BASE & LAYOUT REFERÊNCIA (TABLET: 800 x 1280) */
 /*HTML E BODY*/
 html {
-    background: #f5f5f5;
+    background: white;
 }
 
 body {
@@ -102,7 +102,7 @@ main p {
     text-align: justify;
     line-height: 1.55;
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 /*GALERIA*/
@@ -129,11 +129,14 @@ main p {
 }
 
 
-
+a {
+    text-decoration: none;
+}
 
 
 /* BOTÃO VOLTAR - centralizado */
 .voltar {
+    font-family: poppins;
     font-size: 15px;
     width: 150px;
     padding: 10px;
@@ -159,7 +162,6 @@ main p {
 footer {
     color: #484952;
     padding: 14px 20px;
-    border-top: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +276,6 @@ footer .autora {
     }
 
     main {
-        background-color: #F3D745;
         width: 100%;
         max-width: 700px;
         margin: 18px auto;

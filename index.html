@@ -10,37 +10,48 @@
 
 <body>
     <!--TOPO/CABEÇALHO-->
-    <header></header>
-    <H1 class="logo_nome">scivace</H1>
-    <figure>
-        <img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">
-    </figure>
+    <header>
+        <!--<H1 class="logo_nome">scivace</H1>-->
+        <figure>
+            <!--<img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">-->
+        </figure>
 
     </header>
 
     <!--MAIN-->
     <main>
-        <fieldset>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo suscipit minus repudiandae
-                    debitis.
-                </p>
-            </section>
 
-            <section class="botoes">
-                <!--BOTÕES LOGIN E CADASTRO-->
-                <a href="login.html"><button class="login">Login</button> <br></a>
-                <a href="cadastro.html"><button class="cadastrar_se">cadastrar_se</button>
-                </a>
-            </section>
-        </fieldset>
+        <div class="centro">
+            <fieldset>
+                <figure>
+                    <img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">
+                </figure>
+                <h1>scivace</h1>
+                <p>Seja bem vindo ao Sistema de Coleta de Informações de Visitas de Agente de Combate às Endemias.</p>
+                <!--FORMULÁRIO-->
+                <form action="">
+                    <!--MATRICULA-->
+                    <label for="matricula">Matrícula</label><br>
+                    <input type="text" id="matricula" name="matricula" value="" placeholder="Digite sua matrícula"><br>
+                    <!--SENHA-->
+                    <label for="senha">Senha</label><br>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br>
+                    <!--ENVIAR: COLOCAR O BOTÃO DE ENVIAR AQUI (INPUT) E TIRAR O BUTTON-->
+                </form>
+                <a href="home.html"><button>Entrar</button> <br></a>
+                <a class="novo_usuario" href="/cadastro.html">Novo usuário</a>
+            </fieldset>
+        </div>
+        <!--BOTÃO VOLTAR-->
+        <!--<div class="inferior_direito">
+            <a href="index.html"><button class="voltar">Voltar</button></a>
+        </div>-->
     </main>
 
     <!--RODAPÉ-->
     <footer>
         <hr>
-        <p class="contato">Contato: (27) 997406498</p>
-        <p class="autora"> Todos os direitos reservados a autora Marcela Bermudes
+        <p class="autora">Contato: (27) 997406498 | Todos os direitos reservados à Marcela Bermudes
         </p>
     </footer>
 

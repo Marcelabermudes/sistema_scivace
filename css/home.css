@@ -13,7 +13,7 @@
 
 /*HTML*/
 html {
-    background-color: #F5F5F5;
+    background-color: white;
 }
 
 
@@ -21,7 +21,6 @@ html {
 body {
     background-color: white;
     width: 834px;
-    height: 1194px;
     margin: auto;
 }
 
@@ -111,6 +110,7 @@ main span {
 /*TEXTO DENTRO DA CAIXA AZUL*/
 .div1 p {
     font-family: poppins;
+    font-size: 0.9rem;
     text-align: justify;
     color: #484952;
     width: 210px;
@@ -137,6 +137,7 @@ main span {
 /*TEXTO DENTRO DA CAIXA BRANCA*/
 .div2 p {
     font-family: poppins;
+    font-size: 0.9rem;
     color: #484952;
     text-align: center;
     padding: 10px;
@@ -194,18 +195,14 @@ button:hover {
 
 /*RODAPÉ*/
 footer {
+    height: 30px;
     font-family: poppins;
     color: #484952;
 }
 
 
-.contato {
-    float: right;
-    margin-right: 20px;
-}
-
 .autora {
-    margin-left: 50px;
+    text-align: center;
 }
 
 /*

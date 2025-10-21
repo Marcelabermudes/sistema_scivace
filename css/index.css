@@ -4,147 +4,234 @@
     box-sizing: border-box;
 }
 
-
 @font-face {
     font-family: poppins;
     src: url(/font/Poppins-Medium.ttf);
 }
 
-
-/*HTML*/
-html {
-    background-color: #F5F5F5;
+/*HTML E BODY*/
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
 }
 
-
-/*BODY*/
 body {
     background-color: white;
-    width: 834px;
-    height: 1194px;
-    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+header {
+    height: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 5vh;
+}
+
+footer {
+    height: 30px;
+}
+
 
 
 /*LOGO NOME (CABEÇALHO)*/
 .logo_nome {
     font-family: poppins;
-    font-size: 40px;
+    font-size: 5vh;
     color: #525EED;
     font-weight: bold;
     margin-right: 20px;
     float: right;
 }
 
-
-
 /*IMAGEM LOGO (CABEÇALHO)*/
-.logo {
+/*.logo {
     width: 36px;
     margin-left: 20px;
     margin-top: 10px;
+}*/
+
+
+
+.logo {
+    width: 12vh;
+    min-width: 70px;
+    max-width: 100px;
 }
 
-
-/*MAIN*/
-main {
-    width: 400px;
-    margin: auto;
-    position: relative;
-    top: 300px;
-
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 
 fieldset {
-    border-radius: 5px;
-    margin-bottom: 50px;
-    border: 1px solid gainsboro;
+    width: 60vh;
+    max-width: 300px;
+    min-width: 250px;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
 
-main p {
-    text-align: justify;
-    margin: auto;
+
+fieldset h1 {
     font-family: poppins;
+    font-size: 3rem;
+    color: #525EED;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #c2c3cc;
+    font-size: 0.85rem;
+}
+
+fieldset p {
+    font-family: poppins;
+    font-size: 2.1vh;
     color: #484952;
-    margin: 60px 40px;
+    margin-bottom: 7vh;
+    text-align: justify;
 }
 
 
-.botoes {
-    margin: 60px 40px;
+
+
+/*.inferior_direito {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}*/
+
+label {
+    font-family: poppins;
+    font-size: 1.8vh;
+    color: #484952;
+}
+
+input {
+    width: 100%;
+    background: #E8F0FD;
+    border: none;
+    border-radius: 5px;
+    padding: 1.5vh;
+    color: #484952;
+    font-family: poppins;
+    font-size: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+input:focus {
+    outline-color: #525EED;
+}
+
+
+/*BOTÃO LOGIN*/
+input[type="submit"],
+button {
+    font-family: poppins;
+    font-size: 2.3vh;
+    width: 28vh;
+    padding: 1.8vh 0;
+    border: none;
+    background-color: #525EED;
+    border-radius: 0.8vh;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+    margin-top: 5vh;
+}
+
+/*HOVER TODOS OS BOTÕES*/
+input[type="submit"]:hover,
+button:hover {
+    background: #F3D745;
+    color: #484952;
+    transform: scale(1.05);
 }
 
 a {
     text-decoration: none;
 }
 
-
-/*BOTÃO LOGIN*/
-.login {
+.novo_usuario {
     font-family: poppins;
-    font-size: 15px;
-    width: 200px;
-    padding: 10px 10px;
-    border: none;
-    background-color: #525EED;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    transition: transform 0.2s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    display: block;
-    margin: auto;
+    font-size: 1rem;
+    color: #525EED;
+    text-decoration: underline;
+    margin-top: 2vh;
 }
 
-
-
-/*BOTÃO CADASTRAR-SE*/
-.cadastrar_se {
-    font-family: poppins;
-    font-size: 15px;
-    width: 200px;
-    padding: 10px 10px;
-    border: none;
-    background-color: #525EED;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    transition: transform 0.2s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    display: block;
-    margin: auto;
+.novo_usuario:hover {
+    color: #F3D745;
 }
 
-
-/*HOVER TODOS OS BOTÕES*/
-button:hover {
-    background: #F3D745;
-    color: #484952;
-    transform: scale(1.1);
-}
 
 
 
 /*RODAPÉ*/
 footer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vh;
     font-family: poppins;
     color: #484952;
-    position: relative;
-    top: 680px;
-}
-
-
-.contato {
-    float: right;
-    margin-right: 30px;
 }
 
 .autora {
-    margin-left: 30px;
+    text-align: center;
 }
 
-/*
-#484952 cinza mais escuro
-#767474 cinza mais claro
-*/
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width:600px) {
+    body {
+        height: auto;
+    }
+
+    .logo_nome {
+        font-size: 6vw;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1vh;
+        height: auto;
+        text-align: center;
+        font-size: 1.8vh;
+    }
+}
