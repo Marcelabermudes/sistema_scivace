@@ -144,6 +144,11 @@ input:focus {
     outline-color: #525EED;
 }
 
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
 /*BOTÃO SALVAR*/
 button {
     font-family: poppins;
@@ -194,6 +199,8 @@ footer {
     padding: 0 5vh;
     font-family: poppins;
     color: #484952;
+    font-size: 1rem;
+    padding-bottom: 15px;
 }
 
 

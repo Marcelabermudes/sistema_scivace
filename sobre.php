@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'db/conexao.php'; // Conecta com o banco
 
 // Se não estiver logado, volta para o login
 if (!isset($_SESSION['usuario_id'])) {

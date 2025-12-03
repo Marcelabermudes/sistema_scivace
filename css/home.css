@@ -13,7 +13,7 @@
 
 /*HTML*/
 html {
-    background-color: rgb(249, 249, 249);
+    background-color: white;
 }
 
 /* HEADER */
@@ -238,6 +238,7 @@ footer {
     height: 30px;
     font-family: poppins;
     color: #484952;
+    font-size: 0.9rem;
 }
 
 

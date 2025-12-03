@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db/conexao.php'; // arquivo com PDO
+require_once 'db/conexao.php';
 
 $erro = "";
 $matricula = "";
@@ -101,8 +101,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-                    <button type="submit" class="btn">Entrar</button>
+                    <div class="botoes">
+                        <button type="submit" class="btn">Entrar</button>
+                    </div>
                 </form>
 
                 <a class="novo_usuario" href="cadastro.php">Novo usuário</a>
@@ -112,7 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!--RODAPÉ-->
     <footer>
-        <hr>
         <p class="autora">Contato: (27) 997406498 | Todos os direitos reservados à Marcela Bermudes</p>
     </footer>
 

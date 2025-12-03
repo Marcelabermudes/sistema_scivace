@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: poppins;
-    src: url(/font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Medium.ttf);
 }
 
 /*HTML*/
 html {
-    background-color: #F5F5F5;
+    background-color: white;
     font-size: 1rem;
     /* base para rem */
 }
@@ -84,10 +84,12 @@ main h1 {
     /* 40px */
     color: #484952;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 main span {
     color: #525EED;
+    padding-bottom: 20px;
 }
 
 /*DADOS DO AGENTE*/
@@ -111,6 +113,42 @@ main span {
 .dados_do_agente p {
     color: #525EED;
     font-weight: 600;
+}
+
+h2 {
+    font-size: 1rem;
+    padding-top: 40px;
+}
+
+p {
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+.tabela-relatorio {
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.tabela-relatorio th {
+    background-color: #f0f0f0;
+}
+
+.tabela-relatorio tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.pdf {
+    padding-top: 40px;
 }
 
 .relatorio {

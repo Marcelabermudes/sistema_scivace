@@ -7,7 +7,7 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 
-// Dados do usuário (opcional)
+// Dados do usuário 
 $nome_usuario = $_SESSION['usuario_nome'] ?? "Usuário";
 ?>
 

@@ -49,12 +49,28 @@ header {
     margin-left: 1.25rem;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.menu h2 {
+    font-family: poppins;
+    color: #525EED;
+    font-size: 13px;
+}
+
 /*MENU DE NAVEGAÇÃO*/
 nav ul {
     list-style: none;
     display: flex;
     gap: 0.75rem;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 nav li a {
@@ -102,6 +118,11 @@ main span {
 
 .coluna_2 {
     padding-left: 0.9375rem;
+}
+
+input {
+    font-family: poppins;
+    color: #c2c3cc;
 }
 
 input::placeholder,
@@ -157,9 +178,16 @@ input {
     border: none;
     border-radius: 0.3125rem;
     padding: 0.625rem;
-    font-size: 0.8125rem;
+    font-size: 0.9rem;
     /* 13px */
-    color: #484952;
+    color: #525EED;
+}
+
+textarea {
+    font-family: poppins;
+    font-size: 0.9rem;
+    color: #525EED;
+
 }
 
 /*INPUT NUMERO - TAMANHO*/
@@ -194,7 +222,7 @@ input[type="radio"]:checked {
 select {
     background-color: #E8F0FD;
     font-family: poppins;
-    color: #484952;
+    color: #525EED;
     padding: 0.625rem;
     border-radius: 0.3125rem;
     border: none;
@@ -284,7 +312,6 @@ select {
     border-radius: 0.3125rem;
     padding: 0.625rem;
     font-size: 0.8125rem;
-    color: #484952;
 }
 
 .conteudo_2 {
@@ -343,7 +370,6 @@ select {
 }
 
 /*BOTÕES*/
-.voltar,
 .enviar {
     font-family: poppins;
     font-size: 0.9375rem;
@@ -378,7 +404,7 @@ footer {
     display: flex;
     align-items: center;
     padding: 1.25rem 0;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 footer .autora {

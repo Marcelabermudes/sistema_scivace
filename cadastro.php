@@ -167,14 +167,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <span class="toggle" onclick="toggleSenha('confirmar_senha')">👁</span>
                 </div>
                 <?php if ($erroConfirmar): ?><div class="erro"><?= $erroConfirmar ?></div><?php endif; ?>
-
-                <button type="submit">Salvar</button>
+                
+                <div class="botoes">
+                    <button type="submit">Salvar</button>
+                </div>
             </form>
 
-            <a class="voltar" href="index.php">Voltar</a>
+            <a class="voltar" href="index.php">Fazer login</a>
         </fieldset>
     </div>
 </main>
+<!--RODAPÉ-->
+    <footer>
+        <p class="autora">Contato: (27) 997406498 | Todos os direitos reservados à Marcela Bermudes</p>
+    </footer>
 
 <script>
 // Mostrar/ocultar senha
