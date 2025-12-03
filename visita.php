@@ -14,7 +14,7 @@
     <header>
         <!--LOGO DO MENU-->
         <figure>
-            <img class="logo" src="/img/logo_scivace.PNG" alt="Logomarca SCIVACE">
+            <img class="logo" src="img/logo_scivace.PNG" alt="Logomarca SCIVACE">
         </figure>
         <!--MENU DE NAVEGAÇÃO-->
         <nav>
@@ -76,24 +76,24 @@
                         <p class="titulo">Tipo de imóvel</p>
                         <div class="colunas_radio">
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="residencia" name="tipo_de_imovel_2" value="residencia">
+                                <input type="radio" id="residencia" name="tipo_de_imovel" value="residencia">
                                 <label for="residencia">Residência</label>
                             </div>
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="outros" name="tipo_de_imovel_2" value="outros"> <label
+                                <input type="radio" id="outros" name="tipo_de_imovel" value="outros"> <label
                                     for="outros">Outros</label>
                             </div>
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="comercio" name="tipo_de_imovel_2" value="comercio"> <label
+                                <input type="radio" id="comercio" name="tipo_de_imovel" value="comercio"> <label
                                     for="comercio">Comercio</label>
                             </div>
                             <div class="espacamento_coluna_radio">
 
-                                <input type="radio" id="pe" name="tipo_de_imovel_2" value="pe"> <label
+                                <input type="radio" id="pe" name="tipo_de_imovel" value="pe"> <label
                                     for="pe">PE</label>
                             </div>
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="terreno_baldio" name="tipo_de_imovel_2" value="terreno_baldio">
+                                <input type="radio" id="terreno_baldio" name="tipo_de_imovel" value="terreno_baldio">
                                 <label for="terreno_baldio">TB</label>
                             </div>
 
@@ -105,15 +105,15 @@
                         <p class="titulo">Tipo de visita</p>
                         <div class="colunas_radio">
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="residencia" name="tipo_de_imovel_2" value="residencia">
-                                <label for="residencia">Recusada</label>
+                                <input type="radio" id="recusada" name="tipo_de_visita" value="recusada">
+                                <label for="recusada">Recusada</label>
                             </div>
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="outros" name="tipo_de_imovel_2" value="outros"> <label
-                                    for="outros">Fechada</label>
+                                <input type="radio" id="fechada" name="tipo_de_visita" value="fechada"> <label
+                                    for="fechada">Fechada</label>
                             </div>
                             <div class="espacamento_coluna_radio">
-                                <input type="radio" id="comercio" name="tipo_de_imovel_2" value="comercio"> <label
+                                <input type="radio" id="comercio" name="tipo_de_visita" value="comercio"> <label
                                     for="comercio">Recuperada</label>
                             </div>
                         </div>
@@ -139,10 +139,10 @@
                     <div class="secao ">
                         <p class="titulo">Imóvel inspecionado</p>
                         <div class="espacamento_radio">
-                            <input type="radio" id="sim" name="imovel_inpecionado_2" value="sim">
-                            <label for="sim">Sim</label>
-                            <input type="radio" id="nao" name="imovel_inpecionado_2" value="nao"> <label
-                                for="nao">Não</label>
+                            <input type="radio" id="imovel_inspecionado_sim" name="imovel_inspecionado" value="sim">
+                            <label for="imovel_inspecionado_sim">Sim</label>
+                            <input type="radio" id="imovel_inspecionado_nao" name="imovel_inspecionado" value="nao"> <label
+                                for="imovel_inspecionado_nao">Não</label>
                         </div>
                     </div>
 
@@ -150,10 +150,10 @@
                     <div class="secao">
                         <p class="titulo">Imóvel tratado</p>
                         <div class="espacamento_radio">
-                            <input type="radio" id="sim" name="imovel_tratado_2" value="sim">
-                            <label for="sim">Sim</label>
-                            <input type="radio" id="nao" name="imovel_tratado_2" value="nao"> <label
-                                for="nao">Não</label>
+                            <input type="radio" id="imovel_tratado_sim" name="imovel_tratado" value="sim">
+                            <label for="imovel_tratado_sim">Sim</label>
+                            <input type="radio" id="imovel_tratado_nao" name="imovel_tratado" value="nao"> <label
+                                for="imovel_tratado_nao">Não</label>
                         </div>
                     </div>
 

@@ -8,7 +8,7 @@
 /* FONT */
 @font-face {
     font-family: poppins;
-    src: url(/font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Medium.ttf);
 }
 
 /* BASE & LAYOUT REFERÊNCIA (TABLET: 800 x 1280) */
@@ -53,18 +53,43 @@ header {
     margin-left: 20px;
 }
 
-/* NAV */
-nav ul {
-    list-style: none;
+/*MENU*/
+.menu {
     display: flex;
-    gap: 12px;
-    align-items: center;
+    flex-direction: column;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.menu h2 {
+    font-family: poppins;
+    color: #525EED;
+    font-size: 13px;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+/* nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+} */
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav li {
+    display: inline;
 }
 
 nav li a {
+    font-family: poppins;
     color: #484952;
     text-decoration: none;
-    transition: color 0.18s, transform 0.18s;
+    margin-left: 30px;
+
 }
 
 nav li a:hover {

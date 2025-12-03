@@ -7,15 +7,26 @@
 
 @font-face {
     font-family: poppins;
-    src: url(/font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Medium.ttf);
 }
 
 
 /*HTML*/
 html {
-    background-color: white;
+    background-color: rgb(249, 249, 249);
 }
 
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 700px;
+    margin: 18px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 
 /*BODY*/
 body {
@@ -28,16 +39,36 @@ body {
 /*IMAGEM LOGO (CABEÇALHO)*/
 .logo {
     width: 36px;
-    margin-top: 10px;
+    height: auto;
     margin-left: 20px;
 }
 
 
-/*MENU DE NAVEGAÇÃO*/
-nav {
+/*MENU*/
+.menu {
+    display: flex;
+    flex-direction: column;
     float: right;
     margin-top: 20px;
     margin-right: 20px;
+    text-align: right;
+}
+
+.menu h2 {
+    font-family: poppins;
+    color: #525EED;
+    font-size: 13px;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+/* nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+} */
+
+nav {
+    margin-bottom: 10px;
 }
 
 nav li {
@@ -48,6 +79,8 @@ nav li a {
     font-family: poppins;
     color: #484952;
     text-decoration: none;
+    margin-left: 30px;
+
 }
 
 nav li a:hover {
@@ -59,9 +92,13 @@ nav li a:hover {
 
 /*MAIN*/
 main {
-    width: 700px;
-    margin: auto;
-    /*Talvez nessa página a largura seja outra*/
+    width: 100%;
+    max-width: 700px;
+    margin: 18px auto;
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    overflow-wrap: break-word;
 }
 
 
@@ -69,8 +106,11 @@ main {
 main h1 {
     font-family: poppins;
     font-size: 40px;
+    font-weight: 700;
     color: #484952;
-    font-weight: bold;
+    text-align: left;
+    padding-top: 18px;
+    margin-bottom: 18px;
 }
 
 main span {
